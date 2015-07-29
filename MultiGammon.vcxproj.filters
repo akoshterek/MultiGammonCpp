@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="fann">
+      <UniqueIdentifier>{dc5c0b44-9425-4836-a2b5-8f4b9d19b948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fann\include">
+      <UniqueIdentifier>{83b7522e-d02b-4568-9f54-3216198de5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BearOff">
+      <UniqueIdentifier>{20ec5ff4-9ac3-4688-96ce-f7e523f9b0bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{8e4c5b43-f6e8-4a87-bb3b-9f0594af85eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gnunn">
+      <UniqueIdentifier>{a346607c-0d02-41fd-9e49-7f9de3a3952e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BgAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BgBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiGammon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_avx.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_error.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_io.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_mem.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_sse.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_train.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="fann\fann_train_data.cpp">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="PositionId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BgEval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bearoff.cpp">
+      <Filter>BearOff</Filter>
+    </ClCompile>
+    <ClCompile Include="bearoffgammon.cpp">
+      <Filter>BearOff</Filter>
+    </ClCompile>
+    <ClCompile Include="BgDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\RandomAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="BgGameDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\BgAgentFactory.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\BgAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="BgMove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BgMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="matchid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\HeuristicAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\PubevalAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\GnubgAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="gnunn\neuralnet.cpp">
+      <Filter>gnunn</Filter>
+    </ClCompile>
+    <ClCompile Include="gnunn\neuralnetsse.cpp">
+      <Filter>gnunn</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\FannFA.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\PubevalRepresentation.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\FlexAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent\RawRepresentation.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="copying.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BgAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BgBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BgMove.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\compat_time.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_activation.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_avx.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_cpp.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_data.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_error.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_internal.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_io.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_mem.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_sse.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\fann_train.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\sse_mathfun.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fann\include\avx_mathfun.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="BgCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BgEval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bearoffgammon.h">
+      <Filter>BearOff</Filter>
+    </ClInclude>
+    <ClInclude Include="bearoff.h">
+      <Filter>BearOff</Filter>
+    </ClInclude>
+    <ClInclude Include="BgReward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BgDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\BgAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\RandomAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="BgGameDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\BgAgentFactory.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="BgMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="matchid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\HeuristicAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\PubevalAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\GnubgAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="gnunn\neuralnet.h">
+      <Filter>gnunn</Filter>
+    </ClInclude>
+    <ClInclude Include="gnunn\sigmoid.h">
+      <Filter>gnunn</Filter>
+    </ClInclude>
+    <ClInclude Include="gnunn\sse.h">
+      <Filter>gnunn</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\FannFA.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\FunctionApproximator.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\InputRepresentation.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\PubevalRepresentation.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\FlexAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent\RawRepresentation.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
