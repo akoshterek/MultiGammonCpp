@@ -81,7 +81,7 @@ void PubevalAgent::loadWeights(fs::path contact, fs::path race)
 	fclose(fq); 
 }
 
-float PubevalAgent::pubeval(bool race, char pos[28])
+float PubevalAgent::pubeval(bool race, int pos[28])
 {
 	float score;
 
@@ -100,25 +100,27 @@ float PubevalAgent::pubeval(bool race, char pos[28])
 	return(score); 
 }
 
-void PubevalAgent::preparePos(const BgBoard *board, char pos[28]) const
+void PubevalAgent::preparePos(const BgBoard *b, int pos[28]) const
 {
-	unsigned int men[2];
-	board->ChequersCount(men);
+	int men[2];
+	BgBoard tmpBoard(*b);
+	tmpBoard.SwapSides();
+	tmpBoard.ChequersCount((unsigned int *)men);
 
 	for(int i = 0; i < 24; i++)
 	{
-		pos[i+1] = board->anBoard[BgBoard::SELF][i];
-		if(board->anBoard[BgBoard::OPPONENT][23 - i])
-			pos[i+1] = -board->anBoard[BgBoard::OPPONENT][23 - i];
+		pos[i+1] = tmpBoard.anBoard[BgBoard::SELF][i];
+		if(tmpBoard.anBoard[BgBoard::OPPONENT][23 - i])
+			pos[i+1] = -tmpBoard.anBoard[BgBoard::OPPONENT][23 - i];
 	}
 
-	pos[25] = board->anBoard[BgBoard::SELF][BgBoard::BAR];
-	pos[0] = -board->anBoard[BgBoard::OPPONENT][BgBoard::BAR];
+	pos[25] = tmpBoard.anBoard[BgBoard::SELF][BgBoard::BAR];
+	pos[0] = -tmpBoard.anBoard[BgBoard::OPPONENT][BgBoard::BAR];
 	pos[26] = 15 - men[BgBoard::SELF];
-	pos[27] = -char(15 - men[BgBoard::OPPONENT]);
+	pos[27] = -(15 - men[BgBoard::OPPONENT]);
 }
 
-void PubevalAgent::setX(const char pos[28])
+void PubevalAgent::setX(const int pos[28])
 {
 	/* sets input vector x[] given board position pos[] */
 	int jm1, n;
@@ -149,8 +151,7 @@ void PubevalAgent::setX(const char pos[28])
 	m_x[122] = m_x[123] = 0;
 } 
 
-void PubevalAgent::evaluatePosition(const BgBoard *board, positionclass& pc, 
-		const bgvariation bgv, BgReward& reward)
+void PubevalAgent::evaluatePosition(const BgBoard *board, positionclass& pc, BgReward& reward)
 {
 	if(pc == CLASS_OVER)
 	{
@@ -159,7 +160,7 @@ void PubevalAgent::evaluatePosition(const BgBoard *board, positionclass& pc,
 	else
 	{
 		reward.reset();
-		char pos[28];
+		int pos[28];
 		preparePos(board, pos);
 
 		positionclass pcPresent = BgEval::Instance()->ClassifyPosition(m_curBoard, VARIATION_STANDARD);

@@ -11,8 +11,7 @@ public:
 	PubevalAgent(fs::path path);
 	virtual ~PubevalAgent(void);
 
-	virtual void evaluatePosition(const BgBoard *board, positionclass& pc, 
-		const bgvariation bgv, BgReward& reward);
+	virtual void evaluatePosition(const BgBoard *board, positionclass& pc, BgReward& reward);
 
 private:
 	float m_wr[124];
@@ -20,9 +19,9 @@ private:
 	float m_x [124]; 
 
 	void loadWeights(fs::path contact, fs::path race);
-	void setX(const char pos[28]);
-	void preparePos(const BgBoard *board, char pos[28]) const;
-	float pubeval(bool race, char pos[28]);
+	void setX(const int pos[28]);
+	void preparePos(const BgBoard *board, int pos[28]) const;
+	float pubeval(bool race, int pos[28]);
 };
 
 #endif

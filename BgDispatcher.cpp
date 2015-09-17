@@ -160,7 +160,7 @@ void BgDispatcher::runIteration(BgAgent *agent1, BgAgent *benchAgent, BgAgent *a
 	{
 		//benchmark
 		BgGameDispatcher *benchDispatcher = new BgGameDispatcher(agent1, benchAgent);
-		benchDispatcher->setShowLog(true);
+		benchDispatcher->setShowLog(false);
 		int half = benchmarkGames / 2;
 		benchDispatcher->playGames(half, false);
 		benchDispatcher->swapAgents();
